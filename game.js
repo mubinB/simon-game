@@ -9,6 +9,7 @@ var started = false;
 $(document).keypress(function(event) {
     if(!started) {
         $('#level-title').text("Level " + level);
+        $('#rules').hide();
         nextSequence();
         started = true;
     }
